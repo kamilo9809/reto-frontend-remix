@@ -4,14 +4,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
-import { carousel } from "~/utils/carouselNovedades";
+import { carousel } from "~/utils/mock/carouselNovedades";
 
 export const Carousel = () => {
   const [dataImages, setDataImages] = useState<Array<{ image: string }>>([]);
 
   useEffect(() => {
     setDataImages(carousel);
-    console.log(dataImages);
   }, []);
 
   return (

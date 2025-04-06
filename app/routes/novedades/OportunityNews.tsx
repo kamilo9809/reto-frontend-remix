@@ -7,7 +7,6 @@ export const OportunityNews = () => {
 
   useEffect(() => {
     setDataApi(oportunityNewsMock);
-    console.log(dataApi);
   }, []);
   return (
     <div className="pb-40">

@@ -13,7 +13,6 @@ export const Services = () => {
 
   useEffect(() => {
     setDataApi(slideServices)
-    console.log(dataApi);
   }, [dataApi]);
 
   return (

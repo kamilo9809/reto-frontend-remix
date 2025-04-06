@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { GridRegisterInterface } from "~/types/interface/GridRegister_Interface"
-import { gridData } from "~/utils/gridInformation";
+import { gridData } from "~/utils/mock/gridInformation";
 
 const check = '/assets/icons/check.svg'
 
@@ -8,9 +8,7 @@ export const GridRegister = () => {
     const [dataUtil, setDataUtil] = useState<GridRegisterInterface[]>([])
 
     useEffect(() => {
-        setDataUtil(gridData)
-        console.log(dataUtil);
-        
+        setDataUtil(gridData)        
     }, [dataUtil]);
   return (
     <div className="pb-36">

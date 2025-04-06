@@ -14,7 +14,6 @@ export const Oportunity = () => {
 
   useEffect(() => {
     setDataApi(slider);
-    console.log(dataApi);
   }, [dataApi]);
 
   return (

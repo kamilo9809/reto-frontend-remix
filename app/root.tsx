@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-
+import { ThemeModeScript } from 'flowbite-react';
 import "./tailwind.css";
 import { lazy, Suspense } from "react";
 import LoadingComponent from "./components/Loading.component";
@@ -34,6 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <ThemeModeScript />
       </head>
       <body className="bg-[#fafafa]">
         <Suspense fallback={<LoadingComponent />}>

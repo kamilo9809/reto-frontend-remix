@@ -5,10 +5,10 @@ import LoadingComponent from "~/components/Loading.component";
 
 export default function registroLayout() {
   return (
-    <div >
-      <Suspense fallback={<LoadingComponent/>}>
-      <FormRegister/>
-      <GridRegister/>
+    <div>
+      <Suspense fallback={<LoadingComponent />}>
+        <FormRegister />
+        <GridRegister />
       </Suspense>
     </div>
   );
